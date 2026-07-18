@@ -125,14 +125,23 @@ img {
 }
 
 .logo-link {
-  width: fit-content;
+  width: 80%;
+  align-self: center;
 }
 
 .logo {
-  width: 192px;
+  width: 100%;
   max-width: 100%;
-  border-radius: 28px;
-  box-shadow: 0 12px 28px rgba(71, 99, 126, 0.15);
+}
+
+.brand-name {
+  margin: -18px 0 14px;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 .brand-links {
@@ -553,10 +562,6 @@ p {
 
   .cv-hero {
     gap: 22px;
-  }
-
-  .logo {
-    width: 156px;
   }
 
   .button,

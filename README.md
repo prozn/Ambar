@@ -6,7 +6,6 @@ This repository contains a two-page static website designed for GitHub Pages hos
 
 Before publishing, update the following placeholders:
 
-- `assets/logo-placeholder.svg` with the final logo file
 - The personal statement and supporting copy in `index.html`
 - Any CV wording in `cv.html` that needs refinement
 
