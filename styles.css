@@ -377,7 +377,32 @@ p {
 
 .cv-page {
   display: grid;
-  gap: 26px;
+  gap: 18px;
+}
+
+.cv-utility {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+}
+
+.cv-utility__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+
+.cv-utility__link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 2px;
 }
 
 .cv-hero,
@@ -407,7 +432,7 @@ p {
 .cv-hero__brand {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: center;
   padding: 28px 24px;
   border-radius: 20px;
   border: 1px solid var(--line);
@@ -424,10 +449,6 @@ p {
 
 .cv-hero__intro h1 {
   max-width: none;
-}
-
-.cv-summary {
-  max-width: 62ch;
 }
 
 .cv-main {
@@ -601,6 +622,10 @@ p {
   .button,
   .brand-links__item {
     width: 100%;
+  }
+
+  .cv-utility {
+    min-height: 32px;
   }
 
   .hero-actions,
