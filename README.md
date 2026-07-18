@@ -1,0 +1,20 @@
+# Ambar Fogue Teaching Services
+
+This repository contains a one-page static website designed for GitHub Pages hosting.
+
+## Replace Placeholders
+
+Before publishing, update the following placeholders:
+
+- `assets/logo-placeholder.svg` with the final logo file
+- `assets/cv-placeholder.pdf` with the final CV PDF
+- The personal statement and supporting copy in `index.html`
+
+## Publish On GitHub Pages
+
+1. Push the repository to GitHub.
+2. In the repository settings, enable GitHub Pages and publish from the main branch root.
+3. Once the final custom domain is known, add a `CNAME` file in the repository root containing only the domain name.
+4. Configure the required DNS records with your domain provider.
+
+Because this site is plain HTML and CSS, no build step is required.
