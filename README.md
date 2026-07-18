@@ -1,14 +1,14 @@
 # Ambar Fogue Teaching Services
 
-This repository contains a one-page static website designed for GitHub Pages hosting.
+This repository contains a two-page static website designed for GitHub Pages hosting.
 
 ## Replace Placeholders
 
 Before publishing, update the following placeholders:
 
 - `assets/logo-placeholder.svg` with the final logo file
-- `assets/cv-placeholder.pdf` with the final CV PDF
 - The personal statement and supporting copy in `index.html`
+- Any CV wording in `cv.html` that needs refinement
 
 ## Publish On GitHub Pages
 

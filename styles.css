@@ -257,24 +257,6 @@ p {
   color: var(--ink);
 }
 
-.hero-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 0;
-  margin: 28px 0 0;
-  list-style: none;
-}
-
-.hero-highlights li {
-  padding: 11px 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(35, 65, 91, 0.07);
-  font-weight: 700;
-  color: var(--ink);
-}
-
 .services,
 .approach,
 .footer {
@@ -356,6 +338,165 @@ p {
   gap: 16px;
 }
 
+.cv-page {
+  display: grid;
+  gap: 26px;
+}
+
+.cv-hero,
+.cv-main {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-xl);
+}
+
+.cv-hero {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 28px;
+  padding: 26px;
+}
+
+.cv-hero::before,
+.cv-main::before {
+  content: "";
+  position: absolute;
+  inset: auto -40px -60px auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 36% 64% 70% 30% / 36% 37% 63% 64%;
+  background: rgba(255, 255, 255, 0.44);
+  transform: rotate(-12deg);
+}
+
+.cv-hero__brand,
+.cv-hero__intro,
+.cv-main__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cv-hero__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cv-hero__intro {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+  padding-top: 8px;
+}
+
+.cv-hero__intro h1 {
+  max-width: none;
+}
+
+.cv-summary {
+  max-width: 62ch;
+}
+
+.cv-main {
+  padding: 34px;
+}
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.45fr);
+  gap: 22px;
+}
+
+.cv-column {
+  display: grid;
+  gap: 22px;
+}
+
+.cv-section,
+.cv-role {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(35, 65, 91, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cv-section--profile {
+  background: #edf8fd;
+}
+
+.cv-section--skills {
+  background: #fff6d9;
+}
+
+.cv-section--qualifications {
+  background: #ffede7;
+}
+
+.cv-section--additional {
+  background: #eaf8f0;
+}
+
+.cv-section h2,
+.cv-role h3 {
+  margin-bottom: 14px;
+}
+
+.cv-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.cv-list li + li {
+  margin-top: 10px;
+}
+
+.cv-section p + p {
+  margin-top: 14px;
+}
+
+.cv-experience {
+  display: grid;
+  gap: 18px;
+}
+
+.cv-role {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.cv-role__eyebrow {
+  margin-bottom: 10px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ef8762;
+}
+
+.cv-role__heading {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.cv-role__title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.cv-role__dates {
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -366,7 +507,9 @@ p {
 
 @media (max-width: 980px) {
   .hero,
-  .approach {
+  .approach,
+  .cv-hero,
+  .cv-layout {
     grid-template-columns: 1fr;
   }
 
@@ -395,6 +538,8 @@ p {
   }
 
   .hero,
+  .cv-hero,
+  .cv-main,
   .services,
   .approach,
   .footer {
@@ -403,6 +548,10 @@ p {
   }
 
   .hero {
+    gap: 22px;
+  }
+
+  .cv-hero {
     gap: 22px;
   }
 
