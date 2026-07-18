@@ -2,13 +2,6 @@
 
 This repository contains a two-page static website designed for GitHub Pages hosting.
 
-## Replace Placeholders
-
-Before publishing, update the following placeholders:
-
-- The personal statement and supporting copy in `index.html`
-- Any CV wording in `cv.html` that needs refinement
-
 ## Publish On GitHub Pages
 
 1. Push the repository to GitHub.

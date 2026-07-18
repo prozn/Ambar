@@ -9,9 +9,9 @@ This project is a two-page static website for Ambar Fogue's teaching services. I
 - `index.html` contains the homepage structure and site copy.
 - `cv.html` contains the curriculum vitae page.
 - `styles.css` contains the visual system, layout, and responsive behavior.
-- `assets/` contains the logo placeholder and other static assets.
+- `assets/` contains the live logo and other static assets.
 - The site is aimed at parents of young children, especially under 7.
-- The design direction is fun, playful, light, and professional.
+- The design direction is fun, playful, light, and professional, with a cleaner contemporary school-brand presentation.
 
 ## Editing Guidance
 
@@ -21,9 +21,10 @@ This project is a two-page static website for Ambar Fogue's teaching services. I
 - Preserve relative paths for GitHub Pages compatibility.
 - Use email as the only contact method unless the user says otherwise.
 - Keep the services section as the main body focus.
-- Keep service cards as full pastel panels with no numeric badges.
+- Keep service cards as restrained, structured cards with coloured header accents and no numeric badges.
 - Keep the approach cards in a single row on larger screens and stacked on smaller screens.
 - Keep the CV as a proper HTML page, not a downloadable PDF, unless the user explicitly changes direction.
+- Keep the CV page navigation compact: a Back to Home utility link above the header, with no email shown on the CV page unless requested.
 
 ## Content Guidance
 

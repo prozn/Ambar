@@ -8,7 +8,7 @@ This repository contains a two-page static website for Ambar Fogue's teaching se
 - Stack: plain HTML, CSS, and static assets
 - Main files: `index.html`, `cv.html`, `styles.css`, `assets/`
 - Audience: parents seeking support for children under 7
-- Tone: playful, light, warm, and professional
+- Tone: playful, light, warm, and professional, with a cleaner contemporary school-brand presentation
 
 ## Working Rules For Agents
 
@@ -21,18 +21,19 @@ This repository contains a two-page static website for Ambar Fogue's teaching se
 
 ## Current Site Structure
 
-- The homepage hero section contains the logo, CV link, email contact, intro copy, and CTAs.
+- The homepage hero section contains the logo, centred brand name, CV link, email contact, intro copy, and CTAs.
 - The services section is the main body content.
-- Service cards use full pastel backgrounds and do not display numeric labels.
+- Service cards use restrained coloured header accents and do not display numeric labels.
 - The approach section contains three cards in a single row on larger screens.
 - Contact is email-only.
 - There is no bottom contact section.
 - The CV is a dedicated second page at `cv.html`, not a PDF download.
+- The CV page uses a compact Back to Home utility link above the header and does not show the email address.
 
 ## Content And Design Constraints
 
 - Keep the voice parent-facing and grounded in trust, warmth, and child development.
-- Preserve the playful-professional balance; avoid corporate severity and avoid overly childish styling.
+- Preserve the playful-professional balance while keeping the current cleaner, more structured option 3 presentation.
 - Do not reintroduce phone numbers unless the user asks.
 - Do not reintroduce removed sections or labels unless requested.
 - Prefer small, legible content blocks and mobile-safe spacing.
@@ -42,7 +43,7 @@ This repository contains a two-page static website for Ambar Fogue's teaching se
 - Update homepage content in `index.html`.
 - Update CV content in `cv.html`.
 - Update visual design and responsive layout in `styles.css`.
-- Replace placeholder assets in `assets/` when final files are provided.
+- Update live assets in `assets/` when replacements are provided.
 - Add `CNAME` only when the final custom domain is known.
 
 ## Validation
